@@ -7,6 +7,7 @@
 
 <h3>Mitarbeiter</h3>
 
+
 {#if Object.keys(mitarbeiter).length === 0}
   <p>Mitarbeiter nicht gefunden oder Daten werden geladen...</p>
 {:else}

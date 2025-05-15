@@ -30,7 +30,6 @@
                 <td>{mitarbeiter.geburtstag}</td>
                 <td><a href="/mitarbeiter/{mitarbeiter._id}"><i class="bi bi-file-earmark-text"></i></a></td>
                 <td><a href="/mitarbeiter/delete/{mitarbeiter._id}"><i class="bi bi-trash3"></i></a></td>
-                
             </tr>
             {/each}
           </tbody>

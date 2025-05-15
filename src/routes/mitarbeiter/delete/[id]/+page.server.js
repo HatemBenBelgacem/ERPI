@@ -13,7 +13,7 @@ export const actions = {
     delete: async ({ request }) => {
       const data = await request.formData();
       const id = data.get("id");
-      console.log("Delete ID:", id);
       await deleteMitarbeiter(id);
+      //throw redirect(303, '/mitarbeiter');
     }
   };
