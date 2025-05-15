@@ -1,11 +1,6 @@
 <script>
     import Auftraege from "$lib/components/Auftraege.svelte";
     let {data} = $props();
-    
-    
-  
-
-    
 </script>
 
 <h3>Aufträge</h3>
@@ -26,7 +21,7 @@
 <div class="row">
     
 {#each data.auftrag as auftrag}
-    <div class="col-3">
+    <div class="col m-1">
         <Auftraege 
         auftragsnummer={auftrag.auftragsnummer } 
         bezeichnung={auftrag.bezeichnung} 
@@ -36,9 +31,6 @@
         details="/auftraege/{auftrag._id}"
         update="/auftraege/update/{auftrag._id}"
         />
-        
-        
-        
     </div>
 {/each}
 </div>
