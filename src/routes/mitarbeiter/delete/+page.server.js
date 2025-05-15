@@ -2,7 +2,7 @@
 import { deleteMitarbeiter } from "$lib/server/db.js";
 import { redirect } from '@sveltejs/kit';
 
-export function GET({ params }) {
+export async function GET({ params }) {
   await deleteMitarbeiter(params.id);
   throw redirect(303, "/mitarbeiter");
 }
